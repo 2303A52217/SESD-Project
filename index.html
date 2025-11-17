@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Car - Find Your Ride</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Easy Car Rental 🏎️</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="return.html">Return Car</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-bar">
+            <h2>Find a Car</h2>
+            <form id="search-form">
+                <input type="date" id="pickup-date" required>
+                <input type="time" id="pickup-time" value="09:00" required>
+                <select id="car-type">
+                    <option value="">All Types</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Truck</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="car-listings">
+            <h2>Available Vehicles</h2>
+            <div class="car-card">
+                <img src="placeholder-car.jpg" alt="Sedan Car">
+                <h3>Toyota Camry</h3>
+                <p>Type: Sedan | Price: $50/day</p>
+                <a href="booking.html?car=camry" class="book-btn">Book Now</a>
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Easy Car Rental</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
